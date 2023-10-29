@@ -7,7 +7,7 @@ import { INTRODUCTION, LINKEDEIN_PROFILE, NAME } from './app.constants';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
-      <header className="z-10 h-0 sticky top-0 flex justify-end text-slate-100 p-5">
+      <header className="bg-black z-10 sticky top-0 flex justify-end text-slate-100 p-5 opacity-90">
         <a target="_blank" href={LINKEDEIN_PROFILE} rel="noreferrer">
           <Image
             src={linkedin}
@@ -16,8 +16,8 @@ export default function Home() {
           />
         </a>
       </header>
-      <div className="max-w-full w-full items-start justify-between font-mono text-sm lg:flex p-28 flex-nowrap gap-10">
-        <div className="flex flex-col gap-28">
+      <div className="max-w-full w-full items-start justify-between font-mono text-sm lg:flex p-10 md:p-28 flex-nowrap gap-10">
+        <div className="flex flex-col gap-10 md:gap-28">
           <p className="text-5xl text-slate-100">
             {NAME}
           </p>
